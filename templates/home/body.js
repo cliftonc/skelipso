@@ -21,7 +21,8 @@ exports = module.exports = function(req, options, callback) {
     options.getContent(req, "home-feature-a", this.parallel());
     options.getContent(req, "home-feature-b", this.parallel());
     options.getContent(req, "home-feature-c", this.parallel());
-  }, function done(err, welcome, about, quickstart, guide, fa, fb, fc) {
+    options.getBlock("tagcloud", this.parallel());
+  }, function done(err, welcome, about, quickstart, guide, fa, fb, fc, tc) {
     callback(err,{
       welcome: welcome,
       about: about,
@@ -29,7 +30,8 @@ exports = module.exports = function(req, options, callback) {
       guide: guide,
       featurea: fa,
       featureb: fb,
-      featurec: fc
+      featurec: fc,
+      tc:tc
     });
   });
 

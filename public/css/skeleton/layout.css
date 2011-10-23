@@ -194,7 +194,7 @@ ul li { margin-left:10px;padding-left:5px; list-style-type: square}
 .footerBlock .omega { text-align: right !important; }
 
 
-.github-list-item { min-height: 170px; background:#2a2c2a url("/images/stripe.png") repeat;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:5px;-moz-box-shadow:5px;box-shadow:5px;margin-bottom:20px;overflow:hidden;}
+.github-list-item { min-height: 170px; background:#2a2c2a url("/images/stripe_dark.png") repeat;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:5px;-moz-box-shadow:5px;box-shadow:5px;margin-bottom:20px;overflow:hidden;}
 .github-list-item img {float:left;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-right:5px;margin-bottom:5px}
 .github-list-item h6 {margin-top:0; font-size: 0.7em; text-align: left;}
 .github-list-item .h1{color:#ff1200}
@@ -704,6 +704,74 @@ table thead tr .sorted-desc {background-image:url(../images/desc.gif);background
 table thead tr .sorted-asc, table thead tr .sorted-desc {background-color:#8dbdd8;}
 .repo-home td {
   border:none !important;
+}
+
+/* tag cloud */
+/* line 396, ../sass/style.scss */
+.tagcloud {
+  min-height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tagcloud h2 {
+  display: none;
+}
+
+/* line 397, ../sass/style.scss */
+.tagcloud .tag {
+  padding: 8px;
+  display: inline;
+}
+
+/* line 398, ../sass/style.scss */
+.tag-10 {
+  font-size: 2.0em;
+}
+
+/* line 399, ../sass/style.scss */
+.tag-9 {
+  font-size: 1.8em;
+}
+
+/* line 400, ../sass/style.scss */
+.tag-8 {
+  font-size: 1.6em;
+}
+
+/* line 401, ../sass/style.scss */
+.tag-7 {
+  font-size: 1.5em;
+}
+
+/* line 402, ../sass/style.scss */
+.tag-6 {
+  font-size: 1.4em;
+}
+
+/* line 403, ../sass/style.scss */
+.tag-5 {
+  font-size: 1.3em;
+}
+
+/* line 404, ../sass/style.scss */
+.tag-4 {
+  font-size: 0.9em;
+}
+
+/* line 405, ../sass/style.scss */
+.tag-3 {
+  font-size: 0.8em;
+}
+
+/* line 406, ../sass/style.scss */
+.tag-2 {
+  font-size: 0.7em;
+}
+
+/* line 407, ../sass/style.scss */
+.tag-1 {
+  font-size: 0.6em;
 }
 
 
