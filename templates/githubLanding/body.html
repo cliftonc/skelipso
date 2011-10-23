@@ -1,0 +1,38 @@
+<div class="container">
+    <%- header %>
+<div class="row">
+    <% contents.forEach(function(item) {
+    %>
+    
+      <div class='four columns github-list-item'>
+        <div class="spacer">
+            <%
+              var link = '/' + item.alias + '.html'; 
+              if(item.get('githubLink')) {
+                link = item.get('githubLink');
+              }
+              var authorLink = '/user/profile/' + item.author; 
+              if(item.get('githubAuthorLink')) {
+                authorLink = item.get('githubAuthorLink');
+              }
+            %>                      
+            <a class='<%- hotDate(item.updated) %>' href='<%- authorLink %>'>
+            <%
+              if(item.get('githubImage')) {
+                %><img src='<%- item.get('githubImage') %>'/><%
+              }
+            %>          
+            </a>
+            <a class='<%- hotDate(item.updated) %>' href='<%- link %>'>
+              <h6><%- item.author %> @ <br/><%- prettyDate(item.updated) %></h6>
+            </a>
+              <div style='clear:both'></div>
+            <a class='<%- hotDate(item.updated) %> title' href='<%- link %>'>
+              <%- item.title %>
+            </a>
+      </div>
+      </div>
+      <% });  %>
+</div>
+    <%- pager %>
+</div>

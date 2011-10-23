@@ -1,0 +1,23 @@
+<div id="user-login">
+<% if(user.anonymous) { %>  
+
+  <div id="user-welcome-or-login">
+    <a class='login' href="/user/login"><%= t('Log In') %></a>
+    <span class="link-divider">|</span>
+    <a href="/user/register"><%= t('Register') %></a>
+  </div>
+  <div id="user-login-form">
+    <div class="close">close</div>
+    <%- form %>
+  </div>
+
+<% }  else { %>
+  
+  <% if(user) { %>
+    <a href="/user"><%- user.username %></a>
+    <span class="link-divider">|</span>
+    <a href="/user/logout">Logout</a>
+  <% } %>
+
+<% } %>
+</div>

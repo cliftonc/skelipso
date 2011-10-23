@@ -1,0 +1,25 @@
+<!-- Default Content -->
+<div class="row alpha omega">
+  <div class="six columns alpha">
+    <h1><a href="/">
+        <%- config.get('server:name') %>  
+      </a></h1>
+  </div>
+  <div class="ten columns omega">
+    <div class="six columns alpha searchForm">
+      <%- searchForm %>
+    </div>
+    <div class="four columns omega right">      
+      <!-- Theme / Module driven content -->      
+      <%- userLogin %>
+    </div>        
+    <div class="ten columns alpha omega">
+      <ul class="main-nav">
+        <li><a href="/section/blog">Blog</a></li>
+        <li><a href="/section/github">Github</a></li>
+        <li><a href="/section/guide">Guide</a></li>
+        <li><a href="/section/quickstart">Quick Start</a></li>
+        <li><a href="/repo">Repo</a></li>
+    </div>
+  </div>
+</div>
