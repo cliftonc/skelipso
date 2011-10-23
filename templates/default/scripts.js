@@ -13,7 +13,7 @@ exports = module.exports = function(req, options, callback) {
    */
   calipso.lib.step(
     function getContent() {
-      options.getBlock(/scripts.(?!disqus)|(.)/,this.parallel());
+      options.getBlock(/^scripts\.(?!disqus)/,this.parallel());
     },
     function done(err, scripts) {
       callback(err,{scripts:scripts});
